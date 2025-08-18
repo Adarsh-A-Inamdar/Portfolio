@@ -72,7 +72,7 @@ export default function Contact() {
                         href="mailto:your.email@example.com"
                         className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                       >
-                        your.email@example.com
+                        eradarshainamdar@gmail.com
                       </a>
                     </div>
                   </div>
@@ -80,14 +80,14 @@ export default function Contact() {
                     <FaPhone className="h-5 w-5 mr-4 text-primary mt-1" />
                     <div>
                       <h4 className="font-semibold text-black dark:text-white">Phone</h4>
-                      <p className="text-gray-600 dark:text-gray-300">+91 1234567890</p>
+                      <p className="text-gray-600 dark:text-gray-300">+91 8073599968</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <FaMapMarkerAlt className="h-5 w-5 mr-4 text-primary mt-1" />
                     <div>
                       <h4 className="font-semibold text-black dark:text-white">Location</h4>
-                      <p className="text-gray-600 dark:text-gray-300">Your City, India</p>
+                      <p className="text-gray-600 dark:text-gray-300">Davangere, Karnataka, India</p>
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                 <div className="flex space-x-4">
                   <Button variant="outline" size="icon" asChild>
                     <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/Adarsh-A-Inamdar"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="GitHub"
@@ -107,7 +107,7 @@ export default function Contact() {
                   </Button>
                   <Button variant="outline" size="icon" asChild>
                     <a
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://linkedin.com/in/adarshainamdar"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
@@ -116,20 +116,10 @@ export default function Contact() {
                       <FaLinkedin className="h-5 w-5" />
                     </a>
                   </Button>
+                
                   <Button variant="outline" size="icon" asChild>
                     <a
-                      href="https://twitter.com/yourusername"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Twitter"
-                      className="text-black dark:text-white hover:text-primary transition-colors"
-                    >
-                      <FaTwitter className="h-5 w-5" />
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="icon" asChild>
-                    <a
-                      href="mailto:your.email@example.com"
+                      href="mailto:eradarshainamdar@gmail.com"
                       aria-label="Email"
                       className="text-black dark:text-white hover:text-primary transition-colors"
                     >
