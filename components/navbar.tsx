@@ -1,19 +1,19 @@
-"use client"
+'use client'
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { HiMenu, HiX, HiMoon, HiSun } from "react-icons/hi"
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
-import { Button } from "@/components/ui/button"
-import { useTheme } from "next-themes"
-import { motion } from "framer-motion"
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { HiMenu, HiX, HiMoon, HiSun } from 'react-icons/hi'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { Button } from '@/components/ui/button'
+import { useTheme } from 'next-themes'
+import { motion } from 'framer-motion'
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Research", href: "#research" },
-  { name: "Contact", href: "#contact" },
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Research', href: '#research' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -30,14 +30,14 @@ export default function Navbar() {
       }
     }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md" : "bg-transparent"
+        scrolled ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -82,11 +82,11 @@ export default function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 aria-label="Toggle theme"
                 className="text-black dark:text-white"
               >
-                {theme === "dark" ? <HiSun size={20} /> : <HiMoon size={20} />}
+                {theme === 'dark' ? <HiSun size={20} /> : <HiMoon size={20} />}
               </Button>
             </motion.div>
 
@@ -95,7 +95,13 @@ export default function Navbar() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <Button variant="ghost" size="icon" asChild aria-label="GitHub" className="text-black dark:text-white">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                aria-label="GitHub"
+                className="text-black dark:text-white"
+              >
                 <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
                   <FaGithub size={20} />
                 </a>
@@ -107,8 +113,18 @@ export default function Navbar() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              <Button variant="ghost" size="icon" asChild aria-label="LinkedIn" className="text-black dark:text-white">
-                <a href="https://linkedin.com/in/adarshainamdar" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                aria-label="LinkedIn"
+                className="text-black dark:text-white"
+              >
+                <a
+                  href="https://linkedin.com/in/adarshainamdar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin size={20} />
                 </a>
               </Button>
@@ -119,11 +135,11 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               aria-label="Toggle theme"
               className="text-black dark:text-white"
             >
-              {theme === "dark" ? <HiSun size={20} /> : <HiMoon size={20} />}
+              {theme === 'dark' ? <HiSun size={20} /> : <HiMoon size={20} />}
             </Button>
             <Button
               variant="ghost"
@@ -142,7 +158,7 @@ export default function Navbar() {
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
+          animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
           className="md:hidden bg-white/95 dark:bg-black/95 backdrop-blur-md"
@@ -160,7 +176,7 @@ export default function Navbar() {
             ))}
             <div className="flex space-x-2 px-3 py-2">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Adarsh-A-Inamdar"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
